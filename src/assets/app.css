@@ -4,8 +4,6 @@
   box-sizing: border-box;
 }
 
-
-
 .form {
   background-color: 'red';
 }
@@ -22,11 +20,6 @@ input[type='text'] {
    width: 300px
 }
 
-
-
-
-
-/* CSS */
 .button{
   background: linear-gradient(to bottom right, #305b92, #cb6ce6);
   border: 0;
@@ -107,7 +100,46 @@ background-image: inherit;
   justify-content: flex-end;
   
 }
+.tag-line{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  font-size: 25px;
+  padding-left:2rem;
+   padding-bottom:2rem;
+  
+}
+.title {
+  display:inline-flex;
+}
+.title .dynamic-texts{
+margin-left: 20px;
+line-height: 90px;
+height:100px;
+}
+.dynamic-texts  p  {
+  list-style: none;
+  font-size:70px;
+  font-weight:500;
+  color:white;
+  position: relative;
+  top:0;
+  animation: slide 15s linear infinite;
+}
 
+@keyframes slide{
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+
+
+/*  responsive style */
 @media screen and (max-width: 768px) {
   .header {
     flex-direction: row;
@@ -140,84 +172,6 @@ input[type='text'] {
 }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .header {
-  display: flex;
-  justify-content: center;
-}
-.logo {
-  height: 120px; /* Adjust the height as needed */
-  /* margin-right: 1px; 
-  top:0;
-  left:0; */
-  /* position:absolute */
-
-/* .icons{
-   position: absolute;
-  top: 0;
-  right: 0;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-}  */
-.title {
-  display:inline-flex;
-}
-.title .dynamic-texts{
-margin-left: 20px;
-line-height: 90px;
-/* overflow:hidden; */
-height:100px;
-}
-.dynamic-texts  p  {
-  list-style: none;
-  font-size:70px;
-  font-weight:500;
-  color:white;
-  position: relative;
-  top:0;
-  animation: slide 15s linear infinite;
-}
-
-
-
-
-@keyframes slide{
-  0% {
-    left: -100%;
-  }
-  100% {
-    left: 100%;
-  }
-}
-
-
-/* Responsive Styles */
 @media screen and (max-width: 768px) {
   .title .dynamic-texts {
     line-height: 60px;
@@ -241,16 +195,7 @@ height:100px;
 }
 
 
-.tag-line{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: aliceblue;
-  font-size: 25px;
-  padding-left:2rem;
-   padding-bottom:2rem;
-  
-}
+
 
 
 @media screen and (max-width: 768px) {
