@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Container from './main/Container';
 import TextField from '@mui/material/TextField';
 import './assets/app.css';
-import  logo from './assets/images/logo.png'
+import logo from './assets/images/logo.png';
 // import Button from '@mui/material/Button';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import IconButton from '@mui/material/IconButton';
@@ -13,34 +13,19 @@ function App() {
   const [container, setContainer] = useState([]);
 
   useEffect(() => {
-
     fetchMe();
   }, [endPoint]);
 
   const submitHandler = (e) => {
     e.preventDefault();
-    
   };
 
-  
-
-const fetchMe = () => {
-
-  
-  fetch(`http://api.tvmaze.com/search/shows?q=${endPoint}`)
-    .then((response) => response.json())
-    .then((data) => setContainer(data));
-};
-
-
-
-
-
-
-
-
-
-
+  //  Creating Fetch option for serach input
+  const fetchMe = () => {
+    fetch(`http://api.tvmaze.com/search/shows?q=${endPoint}`)
+      .then((response) => response.json())
+      .then((data) => setContainer(data));
+  };
 
   return (
     <div className='main'>
@@ -93,8 +78,6 @@ const fetchMe = () => {
           </div>
         )}
 
-      
-        
         <div className='tag-line'>
           <p>Unveiling TV Show Wonders at Your Fingertips!</p>
         </div>
