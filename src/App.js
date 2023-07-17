@@ -22,7 +22,7 @@ function App() {
 
   //  Creating Fetch option for serach input
   const fetchMe = () => {
-    fetch(`http://api.tvmaze.com/search/shows?q=${endPoint}`)
+    fetch(`https://api.tvmaze.com/search/shows?q=${endPoint}`)
       .then((response) => response.json())
       .then((data) => setContainer(data));
   };
