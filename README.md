@@ -30,7 +30,7 @@ The motivation behind this project is to create a platform that provides compreh
 1- Clone the repository to your local machine or download the source code .
 
 ```bash
-https://github.com/singhpriya147/movie_mania.git
+https://github.com/singhpriya147/shows___buzz.git
 ```
 
 2- Opent terminal and navigate to the project directory.
