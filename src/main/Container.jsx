@@ -4,7 +4,7 @@ import { Card } from '@mui/material';
 
 function Container({ container }) {
   return (
-    <>
+    <div>
       <Card
         sx={{ backgroundColor: '#DCDCFF',display: 'flex', flexWrap: 'wrap' }}
       >
@@ -12,7 +12,7 @@ function Container({ container }) {
           return <Item key={item.id} {...item} />;
         })}
       </Card>
-    </>
+    </div>
   );
 }
 
