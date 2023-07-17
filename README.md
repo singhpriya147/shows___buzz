@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# Shows Buzz
+## Overview
+This project is created from the Chingu Voyage 45 pre-work as a solo project. It pulls data from the free public <a href="https://www.tvmaze.com/api">TVMAZE REST API</a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**LIVE LINK** :<a href="https://clever-cascaron-2f5249.netlify.app/">https://clever-cascaron-2f5249.netlify.app</a>
+## Motivation 
+The motivation behind this project is to create a platform that provides comprehensive information and an immersive experience for movie and TV show enthusiasts. Inspired by IMDb, we aim to bring together a vast collection of TV shows, offering many information, ratings, reviews, and more.
+## Features
+ * **Search Functionality:** The landing page features a search bar that enables users to search for movies and TV shows by their names.
 
-## Available Scripts
+* **API Integration:** The project integrates with an API source to fetch up-to-date and accurate information about movies and TV shows.
 
-In the project directory, you can run:
+* **Interactive Card Display:**     Search results are presented in visually appealing cards, showcasing movies and TV shows with  important details like title, release year, genres, and ratings in an easy-to-read format.
 
-### `npm start`
+* **Comprehensive Details:** By clicking on a button , users can access summary about the selected movie or TV show. This includes additional details such as the plot summary, cast and crew members, duration, and production information.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* **Responsive Design:** The project is built with responsiveness in mind, ensuring an optimal viewing experience across various devices.
+ 
+## Usage
+1- On the landing page, you will find a search bar at the top to search for movies or TV shows by name.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2- View the search results displayed as a list of movie or TV show cards.
 
-### `npm test`
+3- Click the "Summary" button on a card to toggle the display of a summary for the selected title.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4- Explore more titles by repeating the search process or navigating back to the search results.
 
-### `npm run build`
+## Installation 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1- Clone the repository to your local machine or download the source code .
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+https://github.com/singhpriya147/movie_mania.git
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2- Opent terminal and navigate to the project directory.
 
-### `npm run eject`
+```bash
+cd your folder
+```
+3- Run the following comman to install the dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm install
+```
+## Running the project 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1- After the installation is complete ,start the development server with the following common:
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2- Open your browser and visit http://localhost:3000 to view the Shows Buzz
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Dependencies 
+List  of the  dependencies that have been installed in the project. Provide a brief explanation or purpose for each dependency. For example:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* material ui : JavaScript library for building user interfaces.
+```bash
+npm install @material-ui/core
 
-### Code Splitting
+```
+* emotion/react: Simple styling in React 
+```bash
+ npm i @emotion/react
+```
+* emotion/styled: writing css styles with JavaScript
+```bash
+ npm i @emotion/styled
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Future Feature Ideas :
+1- **User Registration and Login**:
 
-### Analyzing the Bundle Size
+Implement user registration and login functionality, allowing users to create accounts and securely log in.
+    
+2- **Bookmarking Movies and TV Shows**:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+ Allow users to bookmark  TV shows they are interested in, creating a list of favorites or watchlist.
+ Enable users to easily add or remove titles from their bookmarks.
+ 
+3- **Enhanced Search and Filtering**:
 
-### Making a Progressive Web App
+ Improve the search functionality by implementing advanced search options, filters, and sorting capabilities.
+ Allow users to refine their searches based on specific criteria such as genre, rating, or release date.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
