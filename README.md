@@ -2,7 +2,7 @@
 ## Overview
 This project is created from the Chingu Voyage 45 pre-work as a solo project. It pulls data from the free public <a href="https://www.tvmaze.com/api">TVMAZE REST API</a>
 
-**LIVE LINK** :<a href="https://clever-cascaron-2f5249.netlify.app/">https://clever-cascaron-2f5249.netlify.app</a>
+**LIVE LINK** :<a href="https://delicate-cocada-5f830d.netlify.app/">https://delicate-cocada-5f830d.netlify.app/</a>
 ## Motivation 
 The motivation behind this project is to create a platform that provides comprehensive information and an immersive experience for movie and TV show enthusiasts. Inspired by IMDb, we aim to bring together a vast collection of TV shows, offering many information, ratings, reviews, and more.
 ## Features
@@ -84,5 +84,5 @@ Implement user registration and login functionality, allowing users to create ac
 3- **Enhanced Search and Filtering**:
 
  Improve the search functionality by implementing advanced search options, filters, and sorting capabilities.
- Allow users to refine their searches based on specific criteria such as genre, rating, or release date.
+ Allow users to refine their searches based on specific criteria such as genre, cast name,etc.
 
