@@ -5,8 +5,10 @@ import '../assets/app.css';
 import Button from '@mui/material/Button';
 
 import  defaultImage  from '../assets/images/no_image.jpg'
+
+
+
 function Item({ show }) {
- 
   const [summary, setSummary] = useState(false);
  
     const medium = show.image ? show.image.medium : defaultImage;
