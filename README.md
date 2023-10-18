@@ -25,6 +25,22 @@ The motivation behind this project is to create a platform that provides compreh
 
 4- Explore more titles by repeating the search process or navigating back to the search results.
 
+## Screenshots
+1- **Landing page**
+
+![Screenshot (826)](https://github.com/singhpriya147/shows___buzz/assets/72970648/e81a3957-f76b-4b91-af6f-2dea6be721b5)
+
+2-**Search result**
+
+![Screenshot (827)](https://github.com/singhpriya147/shows___buzz/assets/72970648/7962c133-5c76-4589-a612-c534d81b11ee)
+
+![Screenshot (828)](https://github.com/singhpriya147/shows___buzz/assets/72970648/60ffd24a-60ae-4e40-b7c6-37a12c03a824)
+
+3-**Summary feature**
+
+![Screenshot (829)](https://github.com/singhpriya147/shows___buzz/assets/72970648/17a8ed75-6e5b-4d68-b45a-a7c2ee1b1061)
+
+
 ## Installation 
 
 1- Clone the repository to your local machine or download the source code .
