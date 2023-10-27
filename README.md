@@ -1,6 +1,9 @@
 # Shows Buzz
 ## Overview
-This project is created from the Chingu Voyage 45 pre-work as a solo project. It pulls data from the free public <a href="https://www.tvmaze.com/api">TVMAZE REST API</a>
+
+Shows Buzz is a web application that allows users to explore and discover details about various TV series. It fetches data from a designated API  <a href="https://www.tvmaze.com/api">TVMAZE REST API</a>, providing information such as show titles, summaries, genres, and more. This project serves as a simple, yet engaging way to explore TV series, helping users decide what to watch next.
+
+This project is created from the Chingu Voyage 45 pre-work as a solo project. It pulls data from the free public
 
 **LIVE LINK** :<a href="https://delicate-cocada-5f830d.netlify.app/">https://delicate-cocada-5f830d.netlify.app/</a>
 ## Motivation 
