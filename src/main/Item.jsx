@@ -38,8 +38,6 @@ function Item({ show }) {
             <b>Rating:</b>{' '}
             {show.rating && show.rating.average ? show.rating.average : 'null'}
           </p>
-
-        
         </div>
 
         <div>
@@ -60,7 +58,11 @@ function Item({ show }) {
               justifyContent: 'center',
             }}
           >
-            {summary ? show.summary.replace(/(<([^>]+)>)/gi, '') : null}
+
+          
+            {summary && show.summary
+              ? show.summary.replace(/(<([^>]+)>)/gi,'')
+              : null}
           </Box>
         </div>
 

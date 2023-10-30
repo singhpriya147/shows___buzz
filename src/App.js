@@ -13,11 +13,12 @@ function App() {
   const [container, setContainer] = useState([]);
 
   useEffect(() => {
-    fetchMe();
+    
   }, [endPoint]);
 
   const submitHandler = (e) => {
     e.preventDefault();
+     fetchMe();
   };
 
   //  Creating Fetch option for serach input
