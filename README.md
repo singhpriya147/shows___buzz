@@ -1,8 +1,11 @@
 # Shows Buzz
 ## Overview
-This project is created from the Chingu Voyage 45 pre-work as a solo project. It pulls data from the free public <a href="https://www.tvmaze.com/api">TVMAZE REST API</a>
 
-**LIVE LINK** :<a href="https://clever-cascaron-2f5249.netlify.app/">https://clever-cascaron-2f5249.netlify.app</a>
+Shows Buzz is a web application that allows users to explore and discover details about various TV series. It fetches data from a designated API  <a href="https://www.tvmaze.com/api">TVMAZE REST API</a>, providing information such as show titles, summaries, genres, and more. This project serves as a simple, yet engaging way to explore TV series, helping users decide what to watch next.
+
+This project is created from the Chingu Voyage 45 pre-work as a solo project. It pulls data from the free public
+
+**LIVE LINK** :<a href="https://delicate-cocada-5f830d.netlify.app/">https://delicate-cocada-5f830d.netlify.app/</a>
 ## Motivation 
 The motivation behind this project is to create a platform that provides comprehensive information and an immersive experience for movie and TV show enthusiasts. Inspired by IMDb, we aim to bring together a vast collection of TV shows, offering many information, ratings, reviews, and more.
 ## Features
@@ -24,6 +27,22 @@ The motivation behind this project is to create a platform that provides compreh
 3- Click the "Summary" button on a card to toggle the display of a summary for the selected title.
 
 4- Explore more titles by repeating the search process or navigating back to the search results.
+
+## Screenshots
+1- **Landing page**
+
+![Screenshot (826)](https://github.com/singhpriya147/shows___buzz/assets/72970648/e81a3957-f76b-4b91-af6f-2dea6be721b5)
+
+2-**Search result**
+
+![Screenshot (827)](https://github.com/singhpriya147/shows___buzz/assets/72970648/7962c133-5c76-4589-a612-c534d81b11ee)
+
+![Screenshot (828)](https://github.com/singhpriya147/shows___buzz/assets/72970648/60ffd24a-60ae-4e40-b7c6-37a12c03a824)
+
+3-**Summary feature**
+
+![Screenshot (829)](https://github.com/singhpriya147/shows___buzz/assets/72970648/17a8ed75-6e5b-4d68-b45a-a7c2ee1b1061)
+
 
 ## Installation 
 
@@ -84,5 +103,5 @@ Implement user registration and login functionality, allowing users to create ac
 3- **Enhanced Search and Filtering**:
 
  Improve the search functionality by implementing advanced search options, filters, and sorting capabilities.
- Allow users to refine their searches based on specific criteria such as genre, rating, or release date.
+ Allow users to refine their searches based on specific criteria such as genre, cast name,etc.
 
