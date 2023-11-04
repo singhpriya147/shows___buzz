@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Container from './Container';
-
+import {fetchMe} from '../api/api';
 import '../assets/app.css';
 import logo from '../assets/images/logo.png';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -15,13 +15,13 @@ const LandingPage = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    fetchMe();
+    fetchShows();
   };
 
-  const fetchMe = () => {
-    fetch(`https://api.tvmaze.com/search/shows?q=${endPoint}`)
-      .then((response) => response.json())
-      .then((data) => setContainer(data));
+  const fetchShows= () => {
+    fetchMe(endPoint)
+      .then((data) =>setContainer(data))
+      .catch((error) => console.error("'something went wrong" ,error))
   };
 
   return (

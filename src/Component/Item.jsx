@@ -16,7 +16,7 @@ function Item({ show }) {
 console.log(show.id);
 
   return (
-    <div key={show.id}>
+    
       <Link  to={`/shows/${show.id}/cast`}>
         <Card sx={{ margin: 5, padding: 5, maxWidth: 300 }}>
           <div className='card-header'>
@@ -71,7 +71,7 @@ console.log(show.id);
           <img src={medium} className='image' alt='' />
         </Card>
       </Link>
-    </div>
+    
   );
 }
 

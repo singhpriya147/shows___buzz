@@ -5,8 +5,6 @@ import { Card } from '@mui/material';
 function Container({ container }) {
   return (
     <div>
-      {container.map((item) => (
-       
           <Card
             sx={{
               backgroundColor: '#DCDCFF',
@@ -18,8 +16,7 @@ function Container({ container }) {
               return <Item key={item.id} {...item} />;
             })}
           </Card>
-  
-      ))}
+
     </div>
   );
 }
