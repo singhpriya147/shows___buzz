@@ -11,14 +11,11 @@ const LandingPage = () => {
   const [endPoint, setEndPoint] = useState('');
   const [container, setContainer] = useState([]);
 
-  useEffect(() => {
-  
-    fetchMe();
-  }, [endPoint]);
+ 
 
   const submitHandler = (e) => {
     e.preventDefault();
-   
+    fetchMe();
   };
 
   const fetchMe = () => {
