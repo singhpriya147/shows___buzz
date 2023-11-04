@@ -22,19 +22,24 @@ const ShowCastDetails = () => {
     <div className='container'>
       <h1>Casts of your favorite Shows</h1>
       <div className='detail-container'>
-        {showCast.map((character) => (
+        {showCast && showCast.map((character) => (
           <div key={character.person.id} className='actor-details'>
-            {' '}
             {/* Using a unique identifier as the key */}
             <h2>{character.character.name}</h2>
-            <img
-              src={character.character.image.medium}
-              alt={character.character.name}
-            />
+            {character.character.image && ( // Check if character image exists
+              <img
+                src={character.character.image.medium}
+                alt={character.character.name}
+              />
+            )}
             <p>Name: {character.person.name}</p>
-            <p>Birthday: {character.person.birthday}</p>
-            <p>Gender: {character.person.gender}</p>
-            {/* You can display other character details here */}
+            {character.person.birthday && ( // Check if birthday exists
+              <p>Birthday: {character.person.birthday}</p>
+            )}
+            {character.person.gender && ( // Check if gender exists
+              <p>Gender: {character.person.gender}</p>
+            )}
+            {/* You can add conditional rendering for other character details */}
           </div>
         ))}
       </div>
