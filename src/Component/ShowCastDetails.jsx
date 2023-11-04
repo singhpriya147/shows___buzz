@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import styles from '../styles/ShowCastDetails.css'
+import   '../styles/ShowCastDetails.css'
 const ShowCastDetails = () => {
   const { showId } = useParams();
   console.log("from param");

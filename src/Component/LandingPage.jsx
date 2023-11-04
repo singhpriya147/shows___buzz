@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Container from './Container';
-import TextField from '@mui/material/TextField';
+
 import '../assets/app.css';
 import logo from '../assets/images/logo.png';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -18,7 +18,7 @@ const LandingPage = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    fetchMe();
+   
   };
 
   const fetchMe = () => {
