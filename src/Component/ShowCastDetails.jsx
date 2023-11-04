@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-
+import styles from '../styles/ShowCastDetails.css'
 const ShowCastDetails = () => {
   const { showId } = useParams();
   console.log("from param");
@@ -19,10 +19,11 @@ const ShowCastDetails = () => {
   }, [showId]);
 
   return (
-    <div>
-      <div>
+    <div className='container'>
+      <h1>Casts of your favorite Shows</h1>
+      <div className='detail-container'>
         {showCast.map((character) => (
-          <div key={character.person.id}>
+          <div key={character.person.id} className='actor-details'>
             {' '}
             {/* Using a unique identifier as the key */}
             <h2>{character.character.name}</h2>
