@@ -11,10 +11,10 @@ function Container({ container }) {
               display: 'flex',
               flexWrap: 'wrap',
               width:'90%',
-              margin: '0 auto' ,
-              alignItems:'center',
+              margin: '0 auto' 
+          ,
               justifyContent:'center',
-              
+             flexDirection:'row'
             }}
           >
             {container.map((item) => {

@@ -16,7 +16,7 @@ function Item({ show }) {
 console.log(show.id);
 
   return (
-    <Card sx={{ margin: 5, padding: 5, maxWidth: 300 }}>
+    <Card sx={{ margin: 5, padding: 5, maxWidth: 300  }}>
       <Link to={`/shows/${show.id}/cast`} target='_blank'>
         <div className='card-header'>
           <h1> {show.name}</h1>
