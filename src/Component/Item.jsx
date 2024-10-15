@@ -17,7 +17,7 @@ console.log(show.id);
 
   return (
     <Card sx={{ margin: 5, padding: 5, maxWidth: 300  }}>
-      <Link to={`/shows/${show.id}/cast`} target='_blank'>
+      <Link to={`/shows/${show.id}/cast`} >
         <div className='card-header'>
           <h1> {show.name}</h1>
           <p>
@@ -67,7 +67,7 @@ console.log(show.id);
             : null}
         </Box>
       </div>
-      <Link to={`/shows/${show.id}/cast`} target='_blank'>
+      <Link to={`/shows/${show.id}/cast`} >
         <img src={medium} className='image' alt='' />
       </Link>
     </Card>
