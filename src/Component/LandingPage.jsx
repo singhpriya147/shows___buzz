@@ -36,7 +36,7 @@ const LandingPage = () => {
             <div className='input-container'>
               <input
                 type='text'
-                placeholder='search your favorite shows...'
+                placeholder='search your fav show.... like The boys'
                 value={endPoint}
                 onChange={(e) => setEndPoint(e.target.value)}
               />
