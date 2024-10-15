@@ -16,62 +16,61 @@ function Item({ show }) {
 console.log(show.id);
 
   return (
-    
-      <Link  to={`/shows/${show.id}/cast`}>
-        <Card sx={{ margin: 5, padding: 5, maxWidth: 300 }}>
-          <div className='card-header'>
-            <h1> {show.name}</h1>
-            <p>
-              <b>Type:</b> {show.type ? show.type : 'null'}
-            </p>
-            <p>
-              <b>Language:</b> {show.language ? show.language : 'null'}
-            </p>
-            <p>
-              <b>Status:</b> {show.status ? show.status : 'null'}
-            </p>
-            <p>
-              <b>Runtime:</b> {show.runtime ? `${show.runtime} min` : 'null'}
-            </p>
-            <p>
-              <b>Genres:</b> {show.genres ? show.genres.join(', ') : 'null'}
-            </p>
-            <p>
-              <b>Rating:</b>{' '}
-              {show.rating && show.rating.average
-                ? show.rating.average
-                : 'null'}
-            </p>
-          </div>
-
-          <div>
-            <Button
-              variant='contained'
-              sx={{ backgroundColor: '#561B77', mb: 2, mt: 2 }}
-              onClick={() => setSummary(!summary)}
-            >
-              {summary ? ' hide summary ' : 'show summary'}
-            </Button>
-            <Box
-              sx={{
-                boxShadow: 1,
-                mb: 2,
-                borderRadius: 1,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-              }}
-            >
-              {summary && show.summary
-                ? show.summary.replace(/(<([^>]+)>)/gi, '')
-                : null}
-            </Box>
-          </div>
-
-          <img src={medium} className='image' alt='' />
-        </Card>
+    <Card sx={{ margin: 5, padding: 5, maxWidth: 300 }}>
+      <Link to={`/shows/${show.id}/cast`} target='_blank'>
+        <div className='card-header'>
+          <h1> {show.name}</h1>
+          <p>
+            <b>Type:</b> {show.type ? show.type : 'null'}
+          </p>
+          <p>
+            <b>Language:</b> {show.language ? show.language : 'null'}
+          </p>
+          <p>
+            <b>Status:</b> {show.status ? show.status : 'null'}
+          </p>
+          <p>
+            <b>Runtime:</b> {show.runtime ? `${show.runtime} min` : 'null'}
+          </p>
+          <p>
+            <b>Genres:</b> {show.genres ? show.genres.join(', ') : 'null'}
+          </p>
+          <p>
+            <b>Rating:</b>{' '}
+            {show.rating && show.rating.average ? show.rating.average : 'null'}
+          </p>
+        </div>
       </Link>
-    
+
+      <div>
+        <Button
+          variant='contained'
+          sx={{ backgroundColor: '#561B77', mb: 2, mt: 2 }}
+          onClick={() => setSummary(!summary)}
+        >
+          {summary ? ' hide summary ' : 'show summary'}
+        </Button>
+        <Box
+          sx={{
+            boxShadow: 1,
+           
+            borderRadius: 1,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            height:'auto',
+           gap:'3rem'
+          }}
+        >
+          {summary && show.summary
+            ? show.summary.replace(/(<([^>]+)>)/gi, '')
+            : null}
+        </Box>
+      </div>
+      <Link to={`/shows/${show.id}/cast`} target='_blank'>
+        <img src={medium} className='image' alt='' />
+      </Link>
+    </Card>
   );
 }
 

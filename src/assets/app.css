@@ -20,6 +20,10 @@ input[type='text'] {
    width: 300px
 }
 
+a{
+  text-decoration: none;
+  color: black;
+}
 .button{
   background: linear-gradient(to bottom right, #305b92, #cb6ce6);
   border: 0;
@@ -94,6 +98,9 @@ background-image: inherit;
   margin-right: 10px;
 }
 
+.container{
+  background-color: aqua;
+}
 .icons {
   display: flex;
   align-items: center;

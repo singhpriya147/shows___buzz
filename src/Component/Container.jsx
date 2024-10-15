@@ -4,12 +4,17 @@ import { Card } from '@mui/material';
 
 function Container({ container }) {
   return (
-    <div>
+    <div >
           <Card
             sx={{
               backgroundColor: '#DCDCFF',
               display: 'flex',
               flexWrap: 'wrap',
+              width:'90%',
+              margin: '0 auto' ,
+              alignItems:'center',
+              justifyContent:'center',
+              
             }}
           >
             {container.map((item) => {
